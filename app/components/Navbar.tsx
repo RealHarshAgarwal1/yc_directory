@@ -15,11 +15,19 @@ const Navbar = async () => {
 
             <div className="flex items-center gap-5 text-black">
                 {session && session?.user ? (
-                    <>
+                    <div>
                     <Link href="/startup/create">
                     <span>Create</span>
                     </Link>
-                    <button onClick={signOut}>
+            </div>
+   9 |   return (
+> 10 |     <header className="px-5 py-3 bg-white shadow-sm font-work-sans">
+     |      ^^^^^^
+  11 |         <nav className='flex justify-between items-center'>
+  12 |             <Link href="/">
+  13 |             <Image src="/logo.png" alt="ERROR" width={144} height={30} />
+
+Unexpected token `header`. Expected jsx identifier         <button onClick={signOut}>
                         <span>Logout</span>
                     </button>
 
